@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@media (max-width: 640px) {
+
+  /* Apply styles for screens up to 640px wide (typical mobile) */
+  .mainHeading h1 {
+      font-size: 2rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+
+  /* Apply styles for screens between 641px and 768px (small tablets) */
+  .mainHeading h1 {
+      font-size: 3rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* Apply styles for screens between 769px and 1024px (tablets) */
+  .mainHeading h1 {
+      font-size: 4rem;
+  }
+}
+
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, rgba(238, 17, 17, 0.895) 0%, rgba(0, 0, 0, 0.856) 25%, rgba(221, 9, 9, 0.911) 45%, rgba(0, 0, 0, 0.875) 100%);
+  -webkit-animation: AnimateBG 20s ease infinite;
+          animation: AnimateBG 20s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('./font/Rough_Battle.ttf');
+}
+
+.x-for-font{
+    font-family: myFirstFont;
+    color: white;
+}
